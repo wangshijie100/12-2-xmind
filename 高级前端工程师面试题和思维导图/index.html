@@ -1,0 +1,256 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shortcut icon" href="images/HTML.ico" type="image/x-icon">
+	<title>极客学院-高级前端工程师面试题</title>
+</head>
+<body>
+	<div class="mainpage">
+		<!--LOGO和导航模块-->
+		<div class="header">
+			<div class="logo">
+				<a href="http://www.jikexueyuan.com">
+					<img src="images/logo.png" alt="极客学院LOGO" />
+				</a>
+			</div>
+			<div class="nav">
+				<a href="http://www.jikexueyuan.com/" target="_blank">HOME</a>
+				<a href="http://www.w3school.com.cn/html/index.asp" target="_blank">Html</a>
+				<a href="http://www.w3school.com.cn/css/index.asp" target="_blank">Css</a>
+				<a href="http://www.w3school.com.cn/js/index.asp" target="_blank">Javascript</a>
+				<a href="http://www.w3school.com.cn/jquery/index.asp" target="_blank">JQuery</a>
+				<a href="http://www.bootcss.com/" target="_blank">Bootstrap</a>
+			</div>	
+		</div>
+		<div class="line"></div>
+		<!--正文模块-->
+		<div class="maincontent">
+			<!--正文标题-->
+			<div class="headline">
+				<h1>
+					高级前端工程师面试题
+				</h1>
+				<p>
+					时间：2016.01.17 13:25 &nbsp;&nbsp;&nbsp; 整理：王世杰
+				</p>
+			</div>
+			<!--正文内容-->	
+			<div class="content">
+				
+				<h1>
+					1.新的 HTML5 文档类型和字符集是？
+				</h1>
+				<p>
+					HTML5 文档类型：&lt;!doctype html&gt;;<br/>
+					HTML5 使用 UTF-8 编码示例：&lt;meta charset=”UTF-8″&gt;。
+				</p>
+				<h1>
+					2.HTML5 存储类型有什么区别？
+				</h1>
+				<p>
+					HTML5 能够本地存储数据，在之前都是使用 cookies 使用的。HTML5提供了下面两种本地存储方案：<br/>
+					①.localStorage 用于持久化的本地存储，数据永远不会过期，关闭浏览器也不会丢失;<br/>
+					②.sessionStorage 同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储.
+				</p>
+				<h1>
+					3.css定义的权重？
+				</h1>
+				<p>
+					以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：<br/>
+					/*权重为1*/  <br/>
+					div{  <br/>
+					}  <br/>
+					/*权重为10*/  <br/>
+					.class1{  <br/>
+					}  <br/>
+					/*权重为100*/ <br/> 
+					#id1{<br/>
+					}
+					/*权重为100+1=101*/<br/>
+					#id1 div{<br/>
+					}<br/>
+					/*权重为10+1=11*/<br/>
+					.class1 div{<br/>
+					}<br/>
+					/*权重为10+10+1=21*/<br/>
+					.class1 .class2 div{<br/>
+					}     	<br/>
+					如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现。
+					
+				</p>
+				<h1>
+					4.什么是ajax？为什么要使用ajax？异步ajax的优缺点？
+				</h1>
+				<p>
+					AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。AJAX 是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。<br/>
+					优点：1.相对于同步ajax：不会造成UI卡死，用户体验好；2.相对于刷新页面，省流量。<br/>
+					缺点：1.后退按钮无效；2.多个请求同时触发时，由于回调时间不确定，会造成混乱，避免这种混乱需要复杂的判断机制；3.搜索引擎不友好。
+				</p>
+				<h1>
+					5.JSON的优缺点？
+				</h1>
+				<p>
+					①.JSON的优点：<br/>
+					A.数据格式比较简单，易于读写，格式都是压缩的，占用带宽小；<br/>
+					B.易于解析，客户端JavaScript可以简单的通过eval_r()进行JSON数据的读取；<br/>
+					C.支持多种语言，包括ActionScript, C, C#, ColdFusion, Java, JavaScript, Perl, PHP，Python, Ruby等服务器端语言，便于服务器端的解析；<br/>
+					D.在PHP世界，已经有PHP-JSON和JSON-PHP出现了，偏于PHP序列化后的程序直接调用，PHP服务器的对象、数组等能直接生成JSON格式，便于客户端的访问提取；<br/>
+					E.因为JSON格式能直接为服务器端代码使用，大大简化了服务器端和客户端的代码开发量，且完成任务不变，并且易于维护。AJAX = Asynchronous JavaScript and XML（异步的 JavaScript和XML）。AJAX是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，AJAX可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。<br/>
+					①.JSON的缺点：<br/>
+					A.没有XML格式这么推广的深入人心和喜用广泛，没有XML那么通用性；<br/>
+					B.JSON格式目前在Web Service中推广还属于初级阶段。
+				</p>
+				<h1>
+					6.XMLHttpRequest对象的常用方法和属性?
+				</h1>
+				<p>
+					open(“method”,”URL”) 建立对服务器的调用，第一个参数是HTTP请求    方式可以为GET，POST或任何服务器所支持的您想调用的方式。第二个参数是请求页面的URL<br/>
+					send()方法，发送具体请求<br/>
+					abort()方法，停止当前请求<br/>
+					readyState属性   请求的状态有5个可取值 0=未初始化，1=正在加载,2=以加载，3=交互中，4=完成<br/>
+					responseText 属性服务器的响应，表示为一个串<br/>
+					reponseXML 属性服务器的响应，表示为XML<br/>
+					status 服务器的HTTP状态码，200对应ok 400对应not found
+				</p>
+				<h1>
+					7.想实现一个对页面某个节点的拖曳？如何做？（使用原生JS）
+				</h1>
+				<p>
+					①.给需要拖拽的节点绑定mousedown, mousemove, mouseup事件 <br />
+					②.mousedown事件触发后，开始拖拽<br />
+					③.mousemove时，需要通过event.clientX和clientY获取拖拽位置，并实时更新位置<br />
+					④.mouseup时，拖拽结束<br />
+					⑤.需要注意浏览器边界的情况<br />
+				</p>
+				<h1>
+					8.在Javascript中什么是伪数组？如何将伪数组转化为标准数组？
+				</h1>
+				<p>
+					伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。
+				</p>
+				<h1>
+					9.用js实现随机选取10–100之间的10个数字，存入一个数组，并排序。
+				</h1>
+				<p>
+					var iArray = [];   <br />
+					funtion getRandom(istart, iend){   <br />
+        			&nbsp;&nbsp;&nbsp;&nbsp;var iChoice = istart - iend +1;   <br />
+        			&nbsp;&nbsp;&nbsp;&nbsp;return Math.floor(Math.random() * iChoice + istart;   <br />
+					}   <br />
+					for(var i=0; i<10; i++){   <br />
+        			&nbsp;&nbsp;&nbsp;&nbsp;iArray.push(getRandom(10,100));   <br />
+					}   <br />
+					iArray.sort();   <br />
+				</p>
+				<h1>
+					10.正则表达式构造函数var reg=new RegExp(“xxx”)与正则表达字面量var reg=//有什么不同？匹配邮箱的正则表达式？
+				</h1>
+				<p>
+					当使用RegExp()构造函数的时候，不仅需要转义引号（即\”表示”），并且还需要双反斜杠（即\\表示一个\）。使用正则表达字面量的效率更高。<br />
+					邮箱的正则匹配：<br />
+					var regMail = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+				</p>
+				<h1>
+					11.Javascript中callee和caller的作用？
+				</h1>
+				<p>
+					caller是返回一个对函数的引用，该函数调用了当前函数；<br />
+					callee是返回正在被执行的function函数，也就是所指定的function对象的正文。<br />
+				</p>
+				<h1>
+					12.写一个function，清除字符串前后的空格。（兼容所有浏览器）
+				</h1>
+				<p>
+					使用自带接口trim()，考虑兼容性：<br />
+					if (!String.prototype.trim) {   <br />
+ 						&nbsp;&nbsp;&nbsp;&nbsp;String.prototype.trim = function() {    <br />
+ 						&nbsp;&nbsp;&nbsp;&nbsp;return this.replace(/^\s+/, "").replace(/\s+$/,"");   <br />
+ 						&nbsp;&nbsp;&nbsp;&nbsp;}    <br />
+					}    <br />
+					// test the function    <br />
+					var str = " \t\n test string ".trim();    <br />
+					alert(str == "test string");    <br />
+					// alerts "true"   <br />
+				</p>
+				<h1>
+					13.使用NPM有哪些好处？ 
+				</h1>
+				<p>
+					通过NPM，你可以安装和管理项目的依赖，并且能够指明依赖项的具体版本号。 对于Node应用开发而言，你可以通过package.json文件来管理项目信息，配置脚本， 以及指明项目依赖的具体版本。
+				</p>
+				<h1>
+					14.列举几个前端工业化框架？并指明自己擅长哪个框架？
+				</h1>
+				<p>
+					①.Grunt； <br />
+					②.Gulp； <br />
+					③.bower； <br />
+					④.Yeoman； <br />
+					⑤.FIS。 <br />
+					自己擅长的是FIS，曾练习过用FIS重组百度首页。
+				</p>
+				<h1>
+					15.什么是MVC？
+				</h1>
+				<p>
+					MVC由Model（模型）, view（视图）和Controller（控制器）组成。<br />
+					Model：数据信息存取层。<br />
+					View：view层负责将应用的数据以特定的方式展现在界面上。<br />
+					Controller：通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。
+				</p>
+				<h1>
+					16.如何用PHP和MySQL上传视频？
+				</h1>
+				<p>
+					可以在数据库中存放视频的地址，而不需要将真正的视频数据存在数据库中。可以将视频数据存放在服务器的指定文件夹下，上传的默认大小是2MB，但是我们也可以在php.ini文件中修改max_file size选项来改变。
+				</p>
+				<h1>
+					17.优化MYSQL数据库的方法。
+				</h1>
+				<p>
+					①.选取最适用的字段属性,尽可能减少定义字段长度,尽量把字段设置NOT NULL,例如’省份,性别’,最好设置为ENUM； <br />
+					②.使用连接（JOIN）来代替子查询； <br />
+					③.使用联合(UNION)来代替手动创建的临时表； <br />
+					④.锁定表,优化事务处理； <br />
+					⑤.使用外键,优化锁定表； <br />
+					⑥.优化查询语句。
+				</p>
+				<h1>
+					18.对于大流量的网站,您采用什么样的方法来解决访问量问题?
+				</h1>
+				<p>
+					确认服务器硬件是否足够支持当前的流量,数据库读写分离,优化数据表,程序功能规则,禁止外部的盗链,控制大文件的下载,使用不同主机分流主要流量。
+				</p>
+				<h1>
+					19.谈谈以前端角度出发做好SEO需要考虑什么？
+				</h1>
+				<p>
+					①.了解搜索引擎如何抓取网页和如何索引网页；<br/>
+					②.Meta标签优化；<br/>
+					③.如何选取关键词并在网页中放置关键词；<br/>
+					④.了解主要的搜索引擎；<br/>
+					⑤.主要的互联网目录；<br/>
+					⑥.按点击付费的搜索引擎；<br/>
+					⑦.搜索引擎登录；<br/>
+					⑧.链接交换和链接广泛度；<br/>
+					⑨.标签的合理使用。<br/>
+				</p>
+				<h1>
+					20.你的前端技术在哪学的？
+				</h1>
+				<p>
+					<a href="http://www.jikexueyuan.com" target="_blank">极客学院！</a>
+				</p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<!--底部版权说明模块-->
+		<div class="footer">
+			Copyright © 2013-2015 <a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a>&nbsp;<a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+		</div>
+	</div>
+</body>
+</html>

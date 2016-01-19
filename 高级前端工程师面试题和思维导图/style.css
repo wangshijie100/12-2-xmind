@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.mainpage{
+	margin: 0 auto;
+	width: 1000px;
+	font-family: "Microsoft Yahei",arial;
+}
+/*LOGO和导航样式*/
+.header{
+	height: 100px;
+}
+.header img{
+	float: left;
+	height: 50px;
+	margin: 30px;
+}
+.header .nav{
+	float: right;
+	margin-top: 60px;
+	margin-right: 50px;
+}
+.header .nav a{
+	font-size: 16px;
+	color: #000;
+	margin:10px;
+	text-decoration:none;
+}
+.header .nav a:hover{
+	color: #35b558;
+}
+.line{
+	border:1px solid #35b558;
+	margin-bottom: 15px;
+}
+/*正文内容样式*/
+.mainpage .maincontent{	
+	width: 90%;
+	margin: 0 auto;
+}
+.mainpage .maincontent .headline{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.mainpage .maincontent .headline h1{
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.mainpage .maincontent .content h1{
+	font-size: 16px;
+	margin-bottom: 8px;
+	color: #35b558;
+}
+.mainpage .maincontent .content p{
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.content p a{
+	text-decoration: none;
+	color: #000;
+}
+.content p a:hover{
+	color: #35b558;
+}
+/*底部版权说明样式*/
+.footer{
+	text-align: center;
+	font-size: 13px;
+	margin: 20px auto;
+	color: #999;
+}
+.footer a{
+	text-decoration: none;
+	color: #999;
+}
+a:hover{
+	color: #35b558;
+}
